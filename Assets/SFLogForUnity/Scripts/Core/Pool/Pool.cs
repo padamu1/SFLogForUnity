@@ -50,7 +50,7 @@ namespace SFLogForUnity.Scripts.Core.Pool
                     return Rent();
                 }
 
-                if (rentList.Count > 0)
+                if (rentList.Count == 0)
                 {
                     poolObject = rentList[0];
                     rentList.RemoveAt(0);
